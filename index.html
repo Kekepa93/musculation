@@ -616,15 +616,88 @@
     }
 }
 
-        
+
+/* Navigation menu */
+.main-navigation {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.nav-item {
+    padding: 15px 25px;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 0 5px;
+}
+
+.nav-item:hover {
+    background-color: var(--light-gray);
+    color: var(--primary-color);
+}
+
+.nav-item.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .main-navigation {
+        margin-bottom: 30px;
+    }
+}
+
     </style>
 </head>
 <body>
     <div class="container">
         <header class="fade-in">
             <h1>Programme de Musculation Full Body</h1>
-            <p>Programme complet et personnalisé sur machines pour développer force et masse musculaire</p>
+            <p>Programme personnalisé sur machines pour développer force et masse musculaire</p>
         </header>
+        <nav class="main-navigation fade-in" style="animation-delay: 0.1s;">
+    <div class="nav-container">
+        <a href="index.html" class="nav-item active">Programme Full Body</a>
+        <a href="progression-samuel.html" class="nav-item">Progression Samuel</a>
+        <a href="progression-kevin.html" class="nav-item">Progression Kevin</a>
+    </div>
+</nav>
         
         <section class="overview fade-in" style="animation-delay: 0.2s;">
             <h2>Vue d'ensemble du programme</h2>
