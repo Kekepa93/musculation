@@ -628,6 +628,15 @@
     z-index: 100;
 }
 
+/* Sur mobile, le menu devient statique au lieu de sticky */
+@media (max-width: 768px) {
+    .main-navigation {
+        position: static; /* Supprime le comportement sticky */
+        top: auto; /* Annule la propriété top */
+        margin-bottom: 30px;
+    }
+}
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -676,10 +685,6 @@
     .nav-item {
         margin: 5px 0;
         text-align: center;
-    }
-    
-    .main-navigation {
-        margin-bottom: 30px;
     }
 }
 
