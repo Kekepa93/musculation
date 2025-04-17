@@ -424,6 +424,199 @@
         ::-webkit-scrollbar-thumb:hover {
             background-color: var(--primary-color);
         }
+
+
+
+        /* Section Avantages */
+.advantages {
+    margin-bottom: 40px;
+}
+
+.advantage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.advantage-card {
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(67, 97, 238, 0.15);
+}
+
+.advantage-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    min-width: 100px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 20px;
+}
+
+.advantage-content {
+    padding: 25px;
+    flex: 1;
+}
+
+.advantage-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.advantage-content p {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.advantage-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.result-tag {
+    background-color: var(--light-gray);
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.result-tag:hover {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.result-tag span {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.advantage-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantage-list li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+}
+
+.advantage-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.program-cta {
+    margin-top: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 35px;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCBmaWxsPSJub25lIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIvPjxwYXRoIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIgZD0iTTAgMGwxMDAgMTAwTDAgMjAwVjBabTIwMCAwdjIwMGwtMTAwLTEwMEwyMDAgMFoiLz48L3N2Zz4=');
+    opacity: 0.2;
+    background-size: 200px;
+    z-index: 0;
+}
+
+.program-cta > * {
+    position: relative;
+    z-index: 1;
+}
+
+.program-cta-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.program-cta h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.program-cta p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.program-cta-button {
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #e91e78;
+}
+
+@media (max-width: 768px) {
+    .advantage-card {
+        flex-direction: column;
+    }
+    
+    .advantage-icon {
+        min-width: 100%;
+        padding: 15px;
+    }
+    
+    .program-cta {
+        padding: 25px 20px;
+    }
+}
+
+        
     </style>
 </head>
 <body>
@@ -600,10 +793,10 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
-            <div class="exercise-card">
+
+
+
+<div class="exercise-card">
                 <div class="exercise-image">
                     <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/01/face-pull.gif" alt="Face Pull à la poulie (corde)">
                     <div class="exercise-number">9</div>
@@ -626,7 +819,10 @@
             </div>
 
 
-<div class="exercise-card">
+
+
+            
+            <div class="exercise-card">
                 <div class="exercise-image">
                     <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/04/crunch-machine-abdos.gif" alt="Crunch Abdominal à la Machine">
                     <div class="exercise-number">8</div>
@@ -645,10 +841,64 @@
                     </div>
                 </div>
             </div>
-
-
-            
         </section>
+
+
+        <section class="advantages fade-in" style="animation-delay: 0.6s; margin-top: 50px;">
+    <div class="overview" style="background: linear-gradient(135deg, rgba(67, 97, 238, 0.05), rgba(58, 12, 163, 0.05));">
+        <h2>Pourquoi ce programme est ultra pertinent pour toi ?</h2>
+        
+        <div class="advantage-container">
+            <div class="advantage-card">
+                <div class="advantage-icon">💪</div>
+                <div class="advantage-content">
+                    <h3>1. Travail complet du corps (Full Body)</h3>
+                    <p>Tu stimules <strong>tous les groupes musculaires majeurs</strong> à chaque séance : jambes, dos, pectoraux, épaules, bras, abdos.</p>
+                    <div class="advantage-results">
+                        <div class="result-tag"><span>✓</span> Construction musculaire équilibrée</div>
+                        <div class="result-tag"><span>✓</span> Gain de force globale</div>
+                        <div class="result-tag"><span>✓</span> Dépense calorique plus importante</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="advantage-card">
+                <div class="advantage-icon">🛡️</div>
+                <div class="advantage-content">
+                    <h3>2. Entraînement 100% sur machines : sécurité + efficacité</h3>
+                    <ul class="advantage-list">
+                        <li><strong>Guidage du mouvement</strong> → moins de risque de blessure</li>
+                        <li>Parfait pour reprendre sérieusement la muscu ou progresser avec une bonne forme</li>
+                        <li>Tu peux te concentrer sur <strong>l'intensité et la contraction musculaire</strong>, sans te soucier de l'équilibre ou de la stabilité</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="advantage-card">
+                <div class="advantage-icon">🎯</div>
+                <div class="advantage-content">
+                    <h3>3. Objectifs combinés : prise de muscle + perte de gras + esthétique</h3>
+                    <p>La structure (séries, répétitions, tempo) est optimisée pour :</p>
+                    <ul class="advantage-list">
+                        <li><strong>Hypertrophie musculaire</strong> (prise de volume sec)</li>
+                        <li><strong>Brûler des graisses</strong> grâce à un effort global et continu</li>
+                        <li><strong>Améliorer ta posture</strong> et ton apparence générale (épaules plus larges, taille plus fine, torse plus plein)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="program-cta">
+            <div class="program-cta-icon">🔄</div>
+            <h3>Que t'apporte la combinaison précise de ces exercices ?</h3>
+            <p>Ce programme soigneusement équilibré te permet de progresser de manière constante tout en minimisant les risques de blessure. Les exercices ont été sélectionnés pour se compléter mutuellement, assurant un développement harmonieux de ta musculature.</p>
+            <div class="program-cta-button">
+                <a href="#" class="cta-button">Commencer maintenant</a>
+            </div>
+        </div>
+    </div>
+</section>
+
         
         <footer>
             <p>© 2025 Programme de Musculation Full Body • Entraînez-vous intelligemment pour des résultats optimaux</p>
